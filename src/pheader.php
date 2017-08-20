@@ -23,33 +23,45 @@
 
     <body>
 
-        <div class="pageHeader">
 
-            <div class="banner">
+        <div  class="pageHead">
 
-                    <img src="../images/Heilsusaga-isl-01-glaert.png" class="banner-logo" width="372px" height="100px;"/>
-
-                <span>
-                    <img src="../images/if_Flag_of_Iceland_96332.png" class="banner-flags" alt="Icelandic" width="30px" height="30px"/>
-                </span>
-                <span>
-                    <img src="../images/if_Flag_of_United_Kingdom_96354.png" class="banner-flags" alt="English" width="30px" height="30px;"/>
-                </span>
-
+            <div class="banner-logo">
+                <a href="#login">
+                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="372px" height="100px;"/>
+                </a>
             </div>
 
 
 
-            <nav class="navigation">
-                <ul class="navbar">
-                    <li><a href="login.html"><?php echo "Participate" ?></a>  <!--$Participate-->
-                    <li><a href="about.html"><?php echo "About" ?></a>       <!--$About-->
-                    <li><a href="faq.html"><?php echo "QA" ?></a>            <!--$QA-->
-                    <li><a href="contact.html"><?php echo "Contact" ?></a>   <!--$Contact-->
-                </ul>
+            <nav class="navbar navbar-default custom-navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#login"><?php echo "Icelandic" ?></a></li>
+                        <li><a href="#about"><?php echo "English" ?></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#login"><?php echo "Participate" ?></a></li>
+                        <li><a href="#about"><?php echo "About" ?></a></li>
+                        <li><a href="#faq"><?php echo "QA" ?></a></li>
+                        <li><a href="#contact"><?php echo "Contact" ?></a></li>
+                    </ul>
+                </div>
             </nav>
 
-        </div>
+
+
+
+
+
+        <div>Hallo</div>
 
 
 
