@@ -1,8 +1,18 @@
+/*
+Litir:
+#85C1E9
+#4ABDAC
+
+
+Button:
+#F7B733
+#FC4A1A
+ */
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
-    background-color: white;
     color: black;
     margin: 0em;
 }
@@ -10,50 +20,188 @@ body {
 
 h1 {
     font-family: Helvetica, Geneva, Arial,
-    SunSans-Regular, sans-serif
+    SunSans-Regular, sans-serif;
+    color: black;
 }
+
+a {
+    text-decoraction: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 
 .pageHead {
     height: 10%;
     margin: 0em;
     max-height: 200px;
-    background-color: lightskyblue;
+    background-color: #85C1E9;
 }
 
 .banner-logo {
-    padding: 2em;
+     padding: 2em;
+ }
+
+.banner-logo img {
+    margin: 0em;
 }
 
-.custom-navbar {
-    background-color: lightskyblue;
+/* Breyta margin-bottom ef við viljum fá smá bil á milli navbar og myndar */
+.navbar-default {
+    background-color: #85C1E9;
+    color: white;
+    margin-bottom: 0em;
+    padding: 2 em;
 }
 
-.navbar-left {
-    margin-left: 0.5em;
+
+/* Litur á texta í navbar */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
 }
+
+/* Litur á texta og bakgrunni í navbar hover/focus */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: white;
+}
+
 
 .navbar-right {
     margin-right: 0.5em;
+    color: white;
 }
 
+
+/*
 .intermed {
     padding: 1.5em;
-    background-color: white;
 }
 
 .navbar-toggle {
     z-index:3;
 }
+*/
 
-.pageFoot {
-    background-color: lightskyblue;
-    height: 7%;
+.mainSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainTitles {
+    min-width: 48%;
+}
+
+.textTitle {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.titleTextBox {
+    /*min-height: 200px;*/
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+    min-width: 48%;
+}
+
+.textBox {
+    border: 1.5px solid #FC4A1A !important;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 2em;
+    min-width: 60%;
+    text-align: center;
+    align-self: center;
+}
+
+.textBox a {
+    color: #FC4A1A;
+}
+
+.textBox a:hover {
+    background-color: #FC4A1A;
+    color: white;
+    text-decoration: none;
+}
+
+.togglerItem {
+    display: none;
+}
+
+/*
+.contact {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+*/
+
+/*button boxið á forsíðunni */
+.buttonBox {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.btn-default:hover {
+    background-color: #FC4A1A !important;
+    color: white;
+}
+
+.btn-default:active {
+    background-color: #FC4A1A !important;
+}
+
+.btn-default:visited {
+    background-color: #FC4A1A !important;
+}
+
+.btn-default:focus {
+    background-color: #FC4A1A !important;
+}
+
+.btn-default:disabled {
+    background-color: #FC4A1A !important;
 }
 
 
+
+.loginInfo {
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.loginInfoItem {
+    background-color: white;
+    margin: 2em;
+    padding: 1em;
+}
+
+
+
+.pageFoot {
+    background-color: #85C1E9;
+
+}
+
+.socialMedia {
+    min-height: 2em;
+}
+
 .logoFoot {
     text-align: center;
-    margin: 2em;
+    border-top: 0.5px solid white;
+    padding: 1em;
+    min-height: 100px;
 }
 
 
@@ -68,17 +216,32 @@ h1 {
 /*fyrir skjástærð 510 og minni*/
 @media screen and (max-width: 510px) {
     body {
-        background-color: yellow;
+        background-color: white;
+        font-size: large;
+
     }
 
     .banner-logo {
-        height: 70px;
-        width: 260px;
+        padding: 1em;
     }
 
-    .banner-flags {
-        display: none;
+    .banner-logo img {
+        width: 90%;
     }
+
+    .loginInfo {
+        flex-flow: wrap;
+    }
+
+    .mainSection {
+        flex-flow: wrap;
+    }
+
+    .titleTextBox {
+        margin: 1em;
+    }
+
+
 
 
 }

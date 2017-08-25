@@ -24,44 +24,62 @@
 <body>
 
 
-<div  class="pageHead">
 
-    <div class="banner-logo">
-        <a href="#login">
-            <img src="../images/Heilsusaga-isl-01-glaert.png" width="372px" height="100px;"/>
-        </a>
+<?php
+    require 'pheader.php';
+?>
+
+    <div>
+        <img src="../images/_KRI4805.jpg" width=100%>
+    </div>
+
+    <div class="titleTextBox">
+        <span class="textTitle">
+            <h1>Rannsókn um heilsusögu Íslendinga</h1>
+        </span>
+        <span class="textBox">
+            <div>
+                <p>Smelltu á hnappinn hér að neðan til að taka þátt í rannsókninni</p>
+            </div>
+            <div class="buttonBox">
+                <button class="btn btn-default btn-lg">Taka þátt</button>
+                <!-- https://heilsusaga.tf.loftfar.is/login  -->
+            </div>
+        </span>
     </div>
 
 
+    <div class="loginInfo">
+        <span class="loginInfoItem">
+            <h4>Helstu atriði um rannsóknina</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at massa eget sem efficitur consectetur. Maecenas at varius nunc. Fusce sagittis orci ante, ut hendrerit nulla viverra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+        </span>
+        <span class="loginInfoItem">
+            <h4>Hverjir geta tekið þátt?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at massa eget sem efficitur consectetur. Maecenas at varius nunc. Fusce sagittis orci ante, ut hendrerit nulla viverra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+        </span>
+        <span class="loginInfoItem">
+            <h4>Hvernig tek ég þátt?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at massa eget sem efficitur consectetur. Maecenas at varius nunc. Fusce sagittis orci ante, ut hendrerit nulla viverra porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
 
-    <nav class="navbar navbar-default custom-navbar">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        </span>
+    </div>
+
+
+    <div  class="pageFoot">
+
+        <div class="socialMedia">
+
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#login"><?php echo "Icelandic" ?></a></li>
-                <li><a href="#about"><?php echo "English" ?></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#login"><?php echo "Participate" ?></a></li>
-                <li><a href="#about"><?php echo "About" ?></a></li>
-                <li><a href="#faq"><?php echo "QA" ?></a></li>
-                <li><a href="#contact"><?php echo "Contact" ?></a></li>
-            </ul>
-        </div>
-    </nav>
 
+         <div class="logoFoot">
+            <img src="../images/hi_logo_positiv_is_vert.png" width="145px" height="100px;"/>
+         </div>
 
-
-
-
-
-    <div>Hallo</div>
+    </div>
 
 
 

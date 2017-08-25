@@ -27,10 +27,12 @@
         <div  class="pageHead">
 
             <div class="banner-logo">
-                <a href="#login">
-                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="372px" height="100px;"/>
+                <a href="login.php">
+                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="372px"/>
                 </a>
             </div>
+
+
 
 
 
@@ -44,14 +46,14 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#login"><?php echo "Icelandic" ?></a></li>
-                        <li><a href="#about"><?php echo "English" ?></a></li>
+                        <li><a href="#is"><?php echo "Íslenska" ?></a></li>
+                        <li><a href="#en"><?php echo "English" ?></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#login"><?php echo "Participate" ?></a></li>
-                        <li><a href="#about"><?php echo "About" ?></a></li>
-                        <li><a href="#faq"><?php echo "QA" ?></a></li>
-                        <li><a href="#contact"><?php echo "Contact" ?></a></li>
+                        <li><a href="participate.php"><?php echo "Þátttaka" ?></a></li> <!-- Participate -->
+                        <li><a href="about.php"><?php echo "Um rannsóknina" ?></a></li>  <!-- About -->
+                        <li><a href="#faq"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
+                        <li><a href="contact.php"><?php echo "Hafa samband" ?></a></li> <!-- Contact -->
                     </ul>
                 </div>
             </nav>
@@ -60,8 +62,6 @@
 
 
 
-
-        <div>Hallo</div>
 
 
 
