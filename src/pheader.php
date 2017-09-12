@@ -18,46 +18,83 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
         <link href="css/main.css" rel="stylesheet">
+
     </head>
 
     <body>
+
+        <div class="takePart">
+            <div class="takePartItem">
+             <h5>Rannsókn um heilsusögu Íslendinga</h5>
+            </div>
+            <div class="takePartItem">
+             <button class="btn btn-default btn-sm">Taka þátt</button>
+            </div>
+         </div>
+
+        </div>
 
 
         <div  class="pageHead">
 
             <div class="banner-logo">
                 <a href="login.php">
-                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="372px"/>
+                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="250px"/>  <!-- upphaflega var sett hæð: 372px -->
                 </a>
             </div>
 
 
+            <div class="banner-logo2" align="center">
+                <a href="login.php">
+                    <img src="../images/Heilsusaga_stort_glaert.png" width="200px"/>  <!-- upphaflega var sett hæð: 372px -->
+                </a>
+            </div>
+
+            <div class="banner-logo3" align="center">
+                <div>
+                    <h1>Heilsusaga</h1>
+                </div>
+                <div>
+                    <h4>Þekking í almannaþágu</h4>
+                </div>
+
+            </div>
 
 
 
             <nav class="navbar navbar-default custom-navbar">
+                <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div>
                     <ul class="nav navbar-nav">
-                        <li><a href="#is"><?php echo "Íslenska" ?></a></li>
-                        <li><a href="#en"><?php echo "English" ?></a></li>
+                        <li><a href="participate.php"><img src="../images/Heilsusaga-isl-01-glaert.png" height="80px"/></a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+
+                </div>
+                <div class="navbar-collapse collapse" id="myNavBar">
+
+                    <ul class="nav navbar-nav navbar-center">
                         <li><a href="participate.php"><?php echo "Þátttaka" ?></a></li> <!-- Participate -->
                         <li><a href="about.php"><?php echo "Um rannsóknina" ?></a></li>  <!-- About -->
-                        <li><a href="#faq"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
+                        <li><a href="faq.php"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
                         <li><a href="contact.php"><?php echo "Hafa samband" ?></a></li> <!-- Contact -->
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--  <li><button class="btn btn-navbar">Taka þátt</button></li>  -->
+                        <!-- <li><a href="#is" class="strong" alt="Íslenska" title="Skipta yfir í íslensku"><?php echo "Íslenska" ?></a></li> -->
+                        <li><a href="#en" alt="English" title="change to English"><?php echo "English" ?></a></li>
+                    </ul>
+                </div>
                 </div>
             </nav>
-
 
 
 

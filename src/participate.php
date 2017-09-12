@@ -18,10 +18,14 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
     <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
+
+
 
 
 
@@ -31,18 +35,23 @@ require 'pheader.php';
 
     <div class="mainSection">
 
-        <div>
+        <div class="mainImage">
             <img src="../images/_KRI4805.jpg" width=100%>
         </div>
 
         <div class="titleTextBox">
+            <div>
+                <div class="auglysing">
+                    <p>Allar konur 18 ára og eldri geta tekið þátt í rannsókninni</p>
+                </div>
+            </div>
             <div class="textTitle">
                 <h1>Rannsókn um heilsusögu Íslendinga</h1>
             </div>
             <div class="textBox">
-                <p>Smelltu á hnappinn hér að neðan til að taka þátt í rannsókninni</p>
+                <p>Smelltu á hnappinn til að taka þátt í rannsókninni</p>
 
-                <button class="btn btn-default btn-lg">Taka þátt</button>
+                <button class="btn btn-default btn-lg"><a href="https://heilsusaga.tf.loftfar.is/login">Taka þátt</a></button>
                 <!-- https://heilsusaga.tf.loftfar.is/login  -->
             </div>
         </div>

@@ -3,25 +3,116 @@ Litir:
 #85C1E9
 #4ABDAC
 
+Litasamsetning 1:    (aðalitur: grænn)   -sjá color.adobe.com-
+hvítur  (bakgrunnur)
+#FF3B3F cherry-red (allir buttons, hover:navbar, h4 (þessi efst á síðunni)
+#B20609 Dökkrauður (h1)
+#3BFF70 grænn (banner-logo, og mainSection)
+dimgrey (navbar-texti, almennur texti)
 
-Button:
-#F7B733
-#FC4A1A
+
+Litasamsetning 2:  (aðallitur: gulur  mode:"triad")
+hvítur  (bakgrunnur)
+#CC1B3E fuchsia (allir buttons, hover:navbar, h4 (þessi efst á síðunni)
+#B2203E dark-fuchsia (h1)
+#FFF43B ljóskarrý-gulur (banner-logo, og mainSection)
+#4FCEFF  sægrænn (bakgrunnur við "Íslenska" í navbar, undir klassanum: strong)
+dimgrey (navbar-texti, almennur texti)
+
+
+Litsamsetning 3: (aðallitur: ljósblár )
+#B2203E dark fuchsia allir buttons, , h4 (þessi efst á síðunni)
+#B2203E dark fuchsia    (h1, navbar-texti)
+hvítur  hover:navbar
+#BDBBFF ljósblár (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
+dimgrey (navbar-texti, almennur texti)
+#2F2F40  dökkblár  (texti h3-h5, navbar-texti
+dimgrey     body: texti
+
+
+Litsamsetning 4: (aðallitur: dökk-grá-plum, mode: complementary)
+#619993 blá-grænn (allir buttons, , auglýsing)
+#E6CBBF fölbleikur    (h1, h4 + smelltu til að taka þátt -textinn)
+#4D4440  dökk-grá-plum   navbar (texti venjulega)
+#619993  blá-grænn       hover:navbar
+hvítt (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
+#4D4440  dökk-grá-plum  mainTitles og TitleTextBox  (section sem er hægra megin við mynd)
+#4D4440 (navbar-texti, almennur texti)
+#4D4440    body: texti
+
+
+
+Litsamsetning 5: (aðallitur: blár, eins nálægt lógó og hægt er, mode: analogous)
+#2E7B8A blá-grænn (allir buttons, , auglýsing)
+Hvítt    (h1, h4 + smelltu til að taka þátt -textinn)
+#30487D  blár   navbar (texti venjulega)
+#2E7B8A  blá-grænn       hover:navbar
+hvítt (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
+#30487D  blár   mainTitles og TitleTextBox  (section sem er hægra megin við mynd)
+#30487D  blár   (navbar-texti, almennur texti)
+#30487D  blár   body: texti
+
+Litasamsetning 6: (aðallitur: dökkblár, nota lit lengst til hægri í mode: monochromatic með miðjulitinn: 30487D)
+Hvítur texti og h1, eða:
+alternative: h1, h4 texti"Smelltu á hnappinn": #8A9EC9, í staðinn fyrir alveg hvítt
+2E7B8A   blágrænn
+
+
+Litasamsetning 7: (aðallitur: dökkblár 1C2B4A (miðjuliturinn), mode: complementary)
+Hvítur texti (body)
+1C2B4A      dökkblár     mainTitles, TitleTextBox, navbar texti
+#486296     milliblár    h1, h4, texti"Smelltu á hnappinn"
+#96711B     karrýgulur   auglýsing, buttons, navbar-hover, email
+
+
+Litasamsetning 8: (aðallitur: dökkblár 1C2B4A (miðjuliturinn), mode: compound), 3 miðjulitirnir notaðir
+Hvítur texti (body)
+1C2B4A      dökkblár     mainTitles, TitleTextBox, navbar texti
+#9189B0     ljósblár    h1, h4, texti"Smelltu á hnappinn"
+#574A37     ljósgrábrúnn   auglýsing, buttons, navbar-hover, email
+
+
+Grunnlitur:  #30487D   (mainSection)
+Texti (h1):  #8A9EC9   (ljósfölblár)
+Accentlitur: #647393   (grár), navbar:höver, auglýsing, buttons
+
+
+
+
  */
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cantarell', Arial, sans-serif;
     font-size: 12pt;
-    color: black;
+    color: dimgrey;
     margin: 0em;
+    background-color: white;
 }
 
 
 h1 {
-    font-family: Helvetica, Geneva, Arial,
-    SunSans-Regular, sans-serif;
-    color: black;
+    font-family: 'Cantarell', Arial, sans-serif;
+    color: #D6BF9D;  /**/
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: 'Cantarell', Arial, sans-serif;
+    color: #8A7557;
+}
+
+
+h4 {
+    font-family: 'Cantarell', Arial, sans-serif;
+    color: #1A303D;
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    color: #1C2B4A;
 }
 
 a {
@@ -32,17 +123,71 @@ a:hover {
     text-decoration: none;
 }
 
+a:focus {
+    text-decoration: none;
+}
+
+
+.takePart {
+    background-color: white;
+    color: #1C2B4A;
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.takePartItem {
+    margin: 0.5em;
+}
+
+.litaprof {
+    height: 500px;
+    background-color: #30487D;   (lýst best á: #4261A4 eða #38538C)            #475BDC er mjög nálægt, #4A60EE er ennþá nær, #455CEF, #365CB0, #234897 næst?
+}
 
 .pageHead {
     height: 10%;
     margin: 0em;
     max-height: 200px;
-    background-color: #85C1E9;
+    background-color: white;
 }
 
 .banner-logo {
-     padding: 2em;
+     padding: 0.5em;
+     padding-left: 2em;
+    background-color: white;
+    display: none;
+
  }
+
+.banner-logo2 {
+    background-color: #BDBBFF;
+    padding: 0.5em;
+    margin: 0 auto;
+    display: none;
+
+}
+
+.banner-logo3 {
+    background-color: white;
+    color: #71CC1B;
+    padding: 0.5em;
+    margin: 0 auto;
+    display: none;
+}
+
+
+.banner-logo3 h1 {
+    color: dimgrey;
+}
+
+.banner-logo3 h4 {
+    color: dimgrey;
+}
+
 
 .banner-logo img {
     margin: 0em;
@@ -50,31 +195,88 @@ a:hover {
 
 /* Breyta margin-bottom ef við viljum fá smá bil á milli navbar og myndar */
 .navbar-default {
-    background-color: #85C1E9;
-    color: white;
+    background-color: white;
     margin-bottom: 0em;
     padding: 2 em;
 }
 
 
+
 /* Litur á texta í navbar */
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #1A303D;   /* var upphaflega #777 og síðan dimgrey */
 }
+
 
 /* Litur á texta og bakgrunni í navbar hover/focus */
+/*
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
-    background-color: white;
-}
-
-
-.navbar-right {
-    margin-right: 0.5em;
     color: white;
+    background-color: #7371B2;
+}
+*/
+
+/* Litur á texta og bakgrunni í navbar active */
+/*
+.navbar-default .navbar-nav > li > a:active {
+    color: white;
+    background-color: #7371B2;
+}
+*/
+
+.navbar-nav.navbar > li > a:hover,
+.navbar-nav.navbar > li > a:focus {
+    background-color: transparent;
+    transition: all .5s;
 }
 
+
+.navbar-nav.navbar-center > li > a:hover,
+.navbar-nav.navbar-center > li > a:active,
+.navbar-nav.navbar-center > li > a:focus {
+    color: #8A7557;
+    /*background-color: #7371B2;*/
+
+}
+
+
+.navbar-nav.navbar-center {
+    margin-left: 10%;
+
+}
+*/
+.navbar-nav {
+    vertical-align: center;
+    text-align: center;
+}
+
+.navbar-nav.navbar-right {
+    margin-right: 0.5em;
+    color: #1A303D;
+}
+
+.navbar-nav.navbar-right > li > a:hover,
+.navbar-nav.navbar-right > li > a:focus {
+    color: #8A7557;
+
+}
+
+.navbar-nav li a {
+    line-height: 100px;
+}
+
+
+.strong {
+    background-color: transparent;
+}
+
+.strong {
+    font-weight: 500;
+}
 
 /*
 .intermed {
@@ -89,10 +291,23 @@ a:hover {
 .mainSection {
     display: flex;
     flex-direction: row;
+
+}
+
+.mainImage {
+    min-width: 50%;
 }
 
 .mainTitles {
-    min-width: 48%;
+    min-width: 50%;
+    padding: 2em;
+    background-color: #1A303D;
+    color: white;
+}
+
+.titles {
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .textTitle {
@@ -106,33 +321,49 @@ a:hover {
     flex-flow: wrap;
     flex-direction: column;
     justify-content: center;
-    margin: 2em;
+    margin: 0em;
     min-width: 48%;
+    background-color: #1A303D;
 }
 
 .textBox {
-    border: 1.5px solid #FC4A1A !important;
+    /*border: 1.5px solid #FF3B3F !important;*/
+    background-color: transparent;
     border-radius: 3px;
+    border: 0.5 solid transparent;
     padding: 2em;
     margin: 2em;
     min-width: 60%;
     text-align: center;
     align-self: center;
+    color: #8A7557;  /**/
 }
 
-.textBox a {
-    color: #FC4A1A;
-}
-
-.textBox a:hover {
-    background-color: #FC4A1A;
+.textBoxEmail {
     color: white;
+}
+
+.textBoxEmail:hover {
+    color: #D6BF9D;
     text-decoration: none;
 }
 
-.togglerItem {
+.textBoxEmail:visited {
+    color: #D6BF9D;
+    text-decoration: none;
+}
+
+.textBoxEmail:focus {
+    color: #D6BF9D;
+    text-decoration: none;
+}
+
+
+.hideItem {
     display: none;
 }
+
+
 
 /*
 .contact {
@@ -150,28 +381,60 @@ a:hover {
     padding-top: 2em;
 }
 
-.btn-default:hover {
-    background-color: #FC4A1A !important;
+.btn-default {
+    background-color: #8A7557 !important;
+    border: none;
     color: white;
 }
 
+.btn-default a {
+    color: white;
+}
+
+.btn-default a:hover {
+    color: #8A7557;
+}
+
+.btn-default:hover {
+    background-color: #D6BF9D !important;
+    color: #8A7557;
+}
+
 .btn-default:active {
-    background-color: #FC4A1A !important;
+    background-color: #8A7557 !important;
+    color: white;
+    border: none;
 }
 
 .btn-default:visited {
-    background-color: #FC4A1A !important;
+    background-color: #8A7557 !important;
+    color: white;
+    border: none;
 }
 
 .btn-default:focus {
-    background-color: #FC4A1A !important;
+    background-color: #8A7557 !important;
+    color: white;
+    border: none;
 }
 
 .btn-default:disabled {
-    background-color: #FC4A1A !important;
+    background-color: #8A7557 !important;
+    color: white;
+    border: none;
 }
 
+.auglysing {
+    background-color: #8A7557;
+    color: white;
+    width: 40%;
+    height: 20%;
+    padding: 1em;
+}
 
+.container {
+    position: relative;
+}
 
 .loginInfo {
     background-color: white;
@@ -182,19 +445,17 @@ a:hover {
 
 .loginInfoItem {
     background-color: white;
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
 }
 
-
-
 .pageFoot {
-    background-color: #85C1E9;
-
+    background-color: white;
 }
 
 .socialMedia {
     min-height: 2em;
+    background-color: white;
 }
 
 .logoFoot {
@@ -206,19 +467,33 @@ a:hover {
 
 
 
+
+
+
+
+
 /*fyrir skjástærð 511 og stærri*/
 @media screen and (min-width: 511px) {
     body {
-        background-color: white;
+
     }
 }
+
+/*
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+*/
+
 
 /*fyrir skjástærð 510 og minni*/
 @media screen and (max-width: 510px) {
     body {
-        background-color: white;
         font-size: large;
-
     }
 
     .banner-logo {

@@ -18,7 +18,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
     <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,7 +33,7 @@ require 'pheader.php';
 
 
 <div class="mainSection">
-    <div>
+    <div class="mainImage">
         <img src="../images/KRI_naeringarfr_151015_010.jpg" width=100%>
     </div>
     <div class="titleTextBox">
@@ -40,7 +42,7 @@ require 'pheader.php';
         </div>
         <div class="textBox">
             <p>Hægt er að biðja um frekari upplýsingar með því að senda okkur póst á
-            <a href="mailto:heilsusaga@heilsusaga.is">heilsusaga@heilsusaga.is</a> eða hafa samband í síma 999-9999</p>
+            <a href="mailto:heilsusaga@heilsusaga.is" class="textBoxEmail">heilsusaga@heilsusaga.is</a> eða hafa samband í síma 999-9999</p>
         </div>
     </div>
 </div>
