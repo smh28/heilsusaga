@@ -25,7 +25,7 @@
 
 <body>
 
-
+<!-- Þetta var hugsað sem forsíðan fyrst, en þessu verður sleppt, hafa "þátttaka" sem forsíðu -->
 
 <?php
     require 'pheader.php';

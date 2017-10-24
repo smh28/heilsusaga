@@ -6,9 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <!-- Main title, i.e. "Heilsusaga Íslendinga" -->
+        <!-- Main title: "Heilsusaga Íslendinga" -->
         <title><?php echo "Heilsusaga Íslendinga"; ?></title> <!--$Title-->
 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,7 +37,7 @@
             </div>
          </div>
 
-        </div>
+
 
 
         <div  class="pageHead">
@@ -64,35 +67,34 @@
 
 
 
-            <nav class="navbar navbar-default custom-navbar">
+            <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="participate.php"><img src="../images/Heilsusaga-isl-01-glaert.png" height="80px"/></a></li>
-                    </ul>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavBar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                </div>
-                <div class="navbar-collapse collapse" id="myNavBar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="participate.php"><img src="../images/Heilsusaga-isl-01-glaert.png" height="80px"/></a></li>
+                        </ul>
 
-                    <ul class="nav navbar-nav navbar-center">
-                        <li><a href="participate.php"><?php echo "Þátttaka" ?></a></li> <!-- Participate -->
-                        <li><a href="about.php"><?php echo "Um rannsóknina" ?></a></li>  <!-- About -->
-                        <li><a href="faq.php"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
-                        <li><a href="contact.php"><?php echo "Hafa samband" ?></a></li> <!-- Contact -->
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <!--  <li><button class="btn btn-navbar">Taka þátt</button></li>  -->
-                        <!-- <li><a href="#is" class="strong" alt="Íslenska" title="Skipta yfir í íslensku"><?php echo "Íslenska" ?></a></li> -->
-                        <li><a href="#en" alt="English" title="change to English"><?php echo "English" ?></a></li>
-                    </ul>
-                </div>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavBar">
+
+                        <ul class="nav navbar-nav navbar-center">
+                            <li><a href="participate.php"><?php echo "Þátttaka" ?></a></li> <!-- Participate -->
+                            <li><a href="about.php"><?php echo "Um rannsóknina" ?></a></li>  <!-- About -->
+                            <li><a href="faq.php"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
+                            <li><a href="contact.php"><?php echo "Hafa samband" ?></a></li> <!-- Contact -->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--  <li><button class="btn btn-navbar">Taka þátt</button></li>  -->
+                            <!-- <li><a href="#is" class="strong" alt="Íslenska" title="Skipta yfir í íslensku">Íslenska</a></li> -->
+                            <li><a href="#en" alt="English" title="change to English"><?php echo "English" ?></a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
@@ -104,8 +106,6 @@
 
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>

@@ -9,6 +9,10 @@
     <!-- Main title, i.e. "Heilsusaga Íslendinga" -->
     <title><?php echo "Heilsusaga Íslendinga"; ?></title> <!--$Title-->
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,12 +25,22 @@
     <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet'>
     <link href="css/main.css" rel="stylesheet">
 
+    <script>
+        $factory = new \ImageOptimizer\OptimizerFactory();
+        $optimizer = $factory->get();
+
+        $filepath = /* path to image */;
+
+        $optimizer->optimize($filepath);
+        //optimized file overwrites original one
+    </script>
+
+
+
+
 </head>
 
 <body>
-
-
-
 
 
 <?php
@@ -95,9 +109,6 @@ require 'pheader.php';
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>

@@ -99,9 +99,15 @@ h1 {
     letter-spacing: -1px;
 }
 
+
 h3 {
     font-family: 'Cantarell', Arial, sans-serif;
     color: #8A7557;
+}
+
+
+h3:hover {
+    color: #D6BF9D;
 }
 
 
@@ -110,18 +116,22 @@ h4 {
     color: #1A303D;
 }
 
+
 h5 {
     font-family: Arial, sans-serif;
     color: #1C2B4A;
 }
 
+
 a {
     text-decoraction: none;
 }
 
+
 a:hover {
     text-decoration: none;
 }
+
 
 a:focus {
     text-decoration: none;
@@ -139,9 +149,11 @@ a:focus {
     display: none;
 }
 
+
 .takePartItem {
     margin: 0.5em;
 }
+
 
 .litaprof {
     height: 500px;
@@ -155,6 +167,7 @@ a:focus {
     background-color: white;
 }
 
+
 .banner-logo {
      padding: 0.5em;
      padding-left: 2em;
@@ -163,13 +176,14 @@ a:focus {
 
  }
 
+
 .banner-logo2 {
     background-color: #BDBBFF;
     padding: 0.5em;
     margin: 0 auto;
     display: none;
-
 }
+
 
 .banner-logo3 {
     background-color: white;
@@ -184,6 +198,7 @@ a:focus {
     color: dimgrey;
 }
 
+
 .banner-logo3 h4 {
     color: dimgrey;
 }
@@ -193,40 +208,22 @@ a:focus {
     margin: 0em;
 }
 
-/* Breyta margin-bottom ef við viljum fá smá bil á milli navbar og myndar */
+
 .navbar-default {
     background-color: white;
     margin-bottom: 0em;
-    padding: 2 em;
+    /*padding: 2 em;*/
 }
 
 
-
-/* Litur á texta í navbar */
+/* Navbar textinn/krækjurnar */
 .navbar-default .navbar-nav > li > a {
     text-align: center;
     font-weight: 800;
     text-transform: uppercase;
-    color: #1A303D;   /* var upphaflega #777 og síðan dimgrey */
+    color: #1A303D;
 }
 
-
-/* Litur á texta og bakgrunni í navbar hover/focus */
-/*
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: white;
-    background-color: #7371B2;
-}
-*/
-
-/* Litur á texta og bakgrunni í navbar active */
-/*
-.navbar-default .navbar-nav > li > a:active {
-    color: white;
-    background-color: #7371B2;
-}
-*/
 
 .navbar-nav.navbar > li > a:hover,
 .navbar-nav.navbar > li > a:focus {
@@ -239,20 +236,19 @@ a:focus {
 .navbar-nav.navbar-center > li > a:active,
 .navbar-nav.navbar-center > li > a:focus {
     color: #8A7557;
-    /*background-color: #7371B2;*/
-
 }
 
 
 .navbar-nav.navbar-center {
     margin-left: 10%;
-
 }
-*/
+
+
 .navbar-nav {
     vertical-align: center;
     text-align: center;
 }
+
 
 .navbar-nav.navbar-right {
     margin-right: 0.5em;
@@ -262,8 +258,8 @@ a:focus {
 .navbar-nav.navbar-right > li > a:hover,
 .navbar-nav.navbar-right > li > a:focus {
     color: #8A7557;
-
 }
+
 
 .navbar-nav li a {
     line-height: 100px;
@@ -274,29 +270,22 @@ a:focus {
     background-color: transparent;
 }
 
+
 .strong {
     font-weight: 500;
 }
 
-/*
-.intermed {
-    padding: 1.5em;
-}
-
-.navbar-toggle {
-    z-index:3;
-}
-*/
 
 .mainSection {
     display: flex;
     flex-direction: row;
-
 }
+
 
 .mainImage {
     min-width: 50%;
 }
+
 
 .mainTitles {
     min-width: 50%;
@@ -305,15 +294,18 @@ a:focus {
     color: white;
 }
 
+
 .titles {
     text-align: center;
     margin-bottom: 2em;
 }
 
+
 .textTitle {
     text-align: center;
     margin-top: 2em;
 }
+
 
 .titleTextBox {
     /*min-height: 200px;*/
@@ -325,6 +317,7 @@ a:focus {
     min-width: 48%;
     background-color: #1A303D;
 }
+
 
 .textBox {
     /*border: 1.5px solid #FF3B3F !important;*/
@@ -339,19 +332,23 @@ a:focus {
     color: #8A7557;  /**/
 }
 
+
 .textBoxEmail {
     color: white;
 }
+
 
 .textBoxEmail:hover {
     color: #D6BF9D;
     text-decoration: none;
 }
 
+
 .textBoxEmail:visited {
     color: #D6BF9D;
     text-decoration: none;
 }
+
 
 .textBoxEmail:focus {
     color: #D6BF9D;
@@ -364,22 +361,12 @@ a:focus {
 }
 
 
-
-/*
-.contact {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-*/
-
 /*button boxið á forsíðunni */
 .buttonBox {
     padding-bottom: 2em;
     padding-top: 2em;
 }
+
 
 .btn-default {
     background-color: #8A7557 !important;
@@ -387,18 +374,22 @@ a:focus {
     color: white;
 }
 
+
 .btn-default a {
     color: white;
 }
+
 
 .btn-default a:hover {
     color: #8A7557;
 }
 
+
 .btn-default:hover {
     background-color: #D6BF9D !important;
     color: #8A7557;
 }
+
 
 .btn-default:active {
     background-color: #8A7557 !important;
@@ -406,11 +397,13 @@ a:focus {
     border: none;
 }
 
+
 .btn-default:visited {
     background-color: #8A7557 !important;
     color: white;
     border: none;
 }
+
 
 .btn-default:focus {
     background-color: #8A7557 !important;
@@ -418,12 +411,14 @@ a:focus {
     border: none;
 }
 
+
 .btn-default:disabled {
     background-color: #8A7557 !important;
     color: white;
     border: none;
 }
 
+/*Allar konur 18 ára og eldri...*/
 .auglysing {
     background-color: #8A7557;
     color: white;
@@ -432,9 +427,11 @@ a:focus {
     padding: 1em;
 }
 
+
 .container {
     position: relative;
 }
+
 
 .loginInfo {
     background-color: white;
@@ -443,20 +440,24 @@ a:focus {
     justify-content: center;
 }
 
+
 .loginInfoItem {
     background-color: white;
     margin: 1em;
     padding: 1em;
 }
 
+
 .pageFoot {
     background-color: white;
 }
+
 
 .socialMedia {
     min-height: 2em;
     background-color: white;
 }
+
 
 .logoFoot {
     text-align: center;
@@ -469,9 +470,6 @@ a:focus {
 
 
 
-
-
-
 /*fyrir skjástærð 511 og stærri*/
 @media screen and (min-width: 511px) {
     body {
@@ -479,15 +477,18 @@ a:focus {
     }
 }
 
-/*
+
 @media (min-width: 768px) {
+
+    .navbar-nav {
+
+    }
+
     .navbar-nav.navbar-center {
-        position: absolute;
-        left: 50%;
-        transform: translatex(-50%);
+
     }
 }
-*/
+
 
 
 /*fyrir skjástærð 510 og minni*/
@@ -517,13 +518,36 @@ a:focus {
     }
 
 
-
-
 }
 
+/*
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
 
+*/
 
+/*
+@media screen and (max-width: 910px) {
+    .navbar-nav > li {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
-
+*/
 
 
