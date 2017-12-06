@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
     <head>
         <meta charset="utf-8">
@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <!-- Main title: "Heilsusaga Íslendinga" -->
-        <title><?php echo "Heilsusaga Íslendinga"; ?></title> <!--$Title-->
+        <title><?php echo "Heilsusaga Íslendinga"; ?></title>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -28,44 +28,28 @@
 
     <body>
 
-        <div class="takePart">
-            <div class="takePartItem">
-             <h5>Rannsókn um heilsusögu Íslendinga</h5>
-            </div>
-            <div class="takePartItem">
-             <button class="btn btn-default btn-sm">Taka þátt</button>
-            </div>
-         </div>
+       <?php
+       /* Attaches the class "active" to the current/active menu link,
+       while keeping all other menu links with the class "unactive" */
+           $participate = "unactive";
+           $about = "unactive";
+           $faq = "unactive";
+           $contact = "unactive";
+
+           $menuLinkName = basename($_SERVER['PHP_SELF'], ".php");
+           if($menuLinkName == "participate") {
+               $participate = "active";
+           } else if($menuLinkName == "about") {
+               $about = "active";
+           } else if($menuLinkName == "faq") {
+           $faq = "active";
+           } else if($menuLinkName == "contact") {
+               $contact = "active";
+           }
+       ?>
 
 
-
-
-        <div  class="pageHead">
-
-            <div class="banner-logo">
-                <a href="login.php">
-                    <img src="../images/Heilsusaga-isl-01-glaert.png" width="250px"/>  <!-- upphaflega var sett hæð: 372px -->
-                </a>
-            </div>
-
-
-            <div class="banner-logo2" align="center">
-                <a href="login.php">
-                    <img src="../images/Heilsusaga_stort_glaert.png" width="200px"/>  <!-- upphaflega var sett hæð: 372px -->
-                </a>
-            </div>
-
-            <div class="banner-logo3" align="center">
-                <div>
-                    <h1>Heilsusaga</h1>
-                </div>
-                <div>
-                    <h4>Þekking í almannaþágu</h4>
-                </div>
-
-            </div>
-
-
+       <div  class="pageHead">
 
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -84,26 +68,21 @@
                     <div class="navbar-collapse collapse" id="myNavBar">
 
                         <ul class="nav navbar-nav navbar-center">
-                            <li><a href="participate.php"><?php echo "Þátttaka" ?></a></li> <!-- Participate -->
-                            <li><a href="about.php"><?php echo "Um rannsóknina" ?></a></li>  <!-- About -->
-                            <li><a href="faq.php"><?php echo "Spurningar & svör" ?></a></li> <!-- QA -->
-                            <li><a href="contact.php"><?php echo "Hafa samband" ?></a></li> <!-- Contact -->
+                            <li class="<?php echo $participate ?>"><a href="participate.php"><?php echo $lang['navbar_participate']; ?></a></li>
+                            <li class="<?php echo $about ?>"><a href="about.php"><?php echo $lang['navbar_about']; ?></a></li>
+                            <li class="<?php echo $faq ?>"><a href="faq.php"><?php echo $lang['navbar_faq']; ?></a></li>
+                            <li class="<?php echo $contact ?>"><a href="contact.php"><?php echo $lang['navbar_contact']; ?></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <!--  <li><button class="btn btn-navbar">Taka þátt</button></li>  -->
-                            <!-- <li><a href="#is" class="strong" alt="Íslenska" title="Skipta yfir í íslensku">Íslenska</a></li> -->
-                            <li><a href="#en" alt="English" title="change to English"><?php echo "English" ?></a></li>
+                            <li><a href="<?php Print($lang['navbar_getLang']); ?>"
+                                   alt="<?php Print($lang['navbar_language']); ?>"
+                                   title="<?php Print($lang['navbar_titleLang']); ?>">
+                                    <?php Print($lang['navbar_language']); ?>
+                            </a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
-
-
-
-
-
-
 
 
 

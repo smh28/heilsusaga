@@ -1,85 +1,13 @@
-/*
-Litir:
-#85C1E9
-#4ABDAC
-
-Litasamsetning 1:    (aðalitur: grænn)   -sjá color.adobe.com-
-hvítur  (bakgrunnur)
-#FF3B3F cherry-red (allir buttons, hover:navbar, h4 (þessi efst á síðunni)
-#B20609 Dökkrauður (h1)
-#3BFF70 grænn (banner-logo, og mainSection)
-dimgrey (navbar-texti, almennur texti)
-
-
-Litasamsetning 2:  (aðallitur: gulur  mode:"triad")
-hvítur  (bakgrunnur)
-#CC1B3E fuchsia (allir buttons, hover:navbar, h4 (þessi efst á síðunni)
-#B2203E dark-fuchsia (h1)
-#FFF43B ljóskarrý-gulur (banner-logo, og mainSection)
-#4FCEFF  sægrænn (bakgrunnur við "Íslenska" í navbar, undir klassanum: strong)
-dimgrey (navbar-texti, almennur texti)
-
-
-Litsamsetning 3: (aðallitur: ljósblár )
-#B2203E dark fuchsia allir buttons, , h4 (þessi efst á síðunni)
-#B2203E dark fuchsia    (h1, navbar-texti)
-hvítur  hover:navbar
-#BDBBFF ljósblár (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
-dimgrey (navbar-texti, almennur texti)
-#2F2F40  dökkblár  (texti h3-h5, navbar-texti
-dimgrey     body: texti
-
-
-Litsamsetning 4: (aðallitur: dökk-grá-plum, mode: complementary)
-#619993 blá-grænn (allir buttons, , auglýsing)
-#E6CBBF fölbleikur    (h1, h4 + smelltu til að taka þátt -textinn)
-#4D4440  dökk-grá-plum   navbar (texti venjulega)
-#619993  blá-grænn       hover:navbar
-hvítt (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
-#4D4440  dökk-grá-plum  mainTitles og TitleTextBox  (section sem er hægra megin við mynd)
-#4D4440 (navbar-texti, almennur texti)
-#4D4440    body: texti
-
-
-
-Litsamsetning 5: (aðallitur: blár, eins nálægt lógó og hægt er, mode: analogous)
-#2E7B8A blá-grænn (allir buttons, , auglýsing)
-Hvítt    (h1, h4 + smelltu til að taka þátt -textinn)
-#30487D  blár   navbar (texti venjulega)
-#2E7B8A  blá-grænn       hover:navbar
-hvítt (banner-logo, og loginInfoItem (þ.e. textinn í kössunum fyrir neðan "í suttu máli"))
-#30487D  blár   mainTitles og TitleTextBox  (section sem er hægra megin við mynd)
-#30487D  blár   (navbar-texti, almennur texti)
-#30487D  blár   body: texti
-
-Litasamsetning 6: (aðallitur: dökkblár, nota lit lengst til hægri í mode: monochromatic með miðjulitinn: 30487D)
-Hvítur texti og h1, eða:
-alternative: h1, h4 texti"Smelltu á hnappinn": #8A9EC9, í staðinn fyrir alveg hvítt
-2E7B8A   blágrænn
-
-
-Litasamsetning 7: (aðallitur: dökkblár 1C2B4A (miðjuliturinn), mode: complementary)
-Hvítur texti (body)
-1C2B4A      dökkblár     mainTitles, TitleTextBox, navbar texti
-#486296     milliblár    h1, h4, texti"Smelltu á hnappinn"
-#96711B     karrýgulur   auglýsing, buttons, navbar-hover, email
-
-
-Litasamsetning 8: (aðallitur: dökkblár 1C2B4A (miðjuliturinn), mode: compound), 3 miðjulitirnir notaðir
-Hvítur texti (body)
-1C2B4A      dökkblár     mainTitles, TitleTextBox, navbar texti
-#9189B0     ljósblár    h1, h4, texti"Smelltu á hnappinn"
-#574A37     ljósgrábrúnn   auglýsing, buttons, navbar-hover, email
-
-
-Grunnlitur:  #30487D   (mainSection)
-Texti (h1):  #8A9EC9   (ljósfölblár)
-Accentlitur: #647393   (grár), navbar:höver, auglýsing, buttons
-
-
-
-
- */
+ul, li {
+    -webkit-padding-start: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-margin-before: 0px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    text-decoration: none;
+}
 
 
 body {
@@ -93,8 +21,8 @@ body {
 
 h1 {
     font-family: 'Cantarell', Arial, sans-serif;
-    color: #D6BF9D;  /**/
-    font-weight: 600;
+    color: #D6BF9D;
+    font-weight: 600; !important;
     margin: 0;
     letter-spacing: -1px;
 }
@@ -122,6 +50,9 @@ h5 {
     color: #1C2B4A;
 }
 
+p {
+    margin: 0;
+}
 
 a {
     text-decoraction: none;
@@ -137,135 +68,93 @@ a:focus {
     text-decoration: none;
 }
 
-
-.takePart {
-    background-color: white;
-    color: #1C2B4A;
-    margin: 0em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    display: none;
-}
-
-
-.takePartItem {
-    margin: 0.5em;
-}
-
-
-.litaprof {
-    height: 500px;
-    background-color: #30487D;   (lýst best á: #4261A4 eða #38538C)            #475BDC er mjög nálægt, #4A60EE er ennþá nær, #455CEF, #365CB0, #234897 næst?
-}
-
 .pageHead {
     height: 10%;
-    margin: 0em;
+    margin: 0;
     max-height: 200px;
     background-color: white;
 }
 
+/* Empty class for navbar links that are not currently active */
+.unactive {
 
-.banner-logo {
-     padding: 0.5em;
-     padding-left: 2em;
-    background-color: white;
-    display: none;
-
- }
-
-
-.banner-logo2 {
-    background-color: #BDBBFF;
-    padding: 0.5em;
-    margin: 0 auto;
-    display: none;
 }
-
-
-.banner-logo3 {
-    background-color: white;
-    color: #71CC1B;
-    padding: 0.5em;
-    margin: 0 auto;
-    display: none;
-}
-
-
-.banner-logo3 h1 {
-    color: dimgrey;
-}
-
-
-.banner-logo3 h4 {
-    color: dimgrey;
-}
-
-
-.banner-logo img {
-    margin: 0em;
-}
-
 
 .navbar-default {
     background-color: white;
-    margin-bottom: 0em;
-    /*padding: 2 em;*/
+    margin-bottom: 0;
 }
 
 
-/* Navbar textinn/krækjurnar */
-.navbar-default .navbar-nav > li > a {
+.navbar-nav .navbar > li > a:hover,
+.navbar-nav .navbar > li > a:active,
+.navbar-nav .navbar > li > a:focus {
+    background-color: transparent;
+    transition: all .5s;
+}
+
+/* Aðal-krækjurnar: class = active */
+ul.nav.navbar-nav.navbar-center > li.active > a {
+    background-color: transparent;
+    color: #8A7557;
+}
+
+
+/* Aðal-krækjurnar í navbar */
+.navbar-nav.navbar-center > li > a {
     text-align: center;
     font-weight: 800;
     text-transform: uppercase;
     color: #1A303D;
 }
 
-
-.navbar-nav.navbar > li > a:hover,
-.navbar-nav.navbar > li > a:focus {
-    background-color: transparent;
-    transition: all .5s;
-}
-
-
 .navbar-nav.navbar-center > li > a:hover,
-.navbar-nav.navbar-center > li > a:active,
 .navbar-nav.navbar-center > li > a:focus {
     color: #8A7557;
 }
 
+/*
+.navbar-nav.navbar-center > li > a > .active {
+    color: #8A7557;
+}
+*/
 
 .navbar-nav.navbar-center {
     margin-left: 10%;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #1A303D;
+}
 
 .navbar-nav {
     vertical-align: center;
     text-align: center;
 }
 
-
+/* Tungumála-krækjan */
 .navbar-nav.navbar-right {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
     margin-right: 0.5em;
-    color: #1A303D;
+    color: #1A303D; !important;
 }
 
+/* Tungumála-krækjan */
 .navbar-nav.navbar-right > li > a:hover,
 .navbar-nav.navbar-right > li > a:focus {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
     color: #8A7557;
 }
-
 
 .navbar-nav li a {
     line-height: 100px;
 }
 
-
+/*
 .strong {
     background-color: transparent;
 }
@@ -274,7 +163,7 @@ a:focus {
 .strong {
     font-weight: 500;
 }
-
+*/
 
 .mainSection {
     display: flex;
@@ -286,7 +175,6 @@ a:focus {
     min-width: 50%;
 }
 
-
 .mainTitles {
     min-width: 50%;
     padding: 2em;
@@ -294,33 +182,41 @@ a:focus {
     color: white;
 }
 
-
 .titles {
     text-align: center;
     margin-bottom: 2em;
 }
-
 
 .textTitle {
     text-align: center;
     margin-top: 2em;
 }
 
-
+/*Main section, right column */
 .titleTextBox {
-    /*min-height: 200px;*/
     display: flex;
     flex-flow: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 0em;
+    padding: 0em;
     min-width: 48%;
     background-color: #1A303D;
 }
 
 
+/*Allir 18 ára og eldri...*/
+.auglysing {
+    background-color: #8A7557;
+    color: white;
+    width: 40%;
+    /*height: 20%;*/
+    padding: 1em;
+    text-align: center;
+    margin: 0em;
+}
+
 .textBox {
-    /*border: 1.5px solid #FF3B3F !important;*/
     background-color: transparent;
     border-radius: 3px;
     border: 0.5 solid transparent;
@@ -329,7 +225,8 @@ a:focus {
     min-width: 60%;
     text-align: center;
     align-self: center;
-    color: #8A7557;  /**/
+    color: #8A7557;
+    max-width: 80%;
 }
 
 
@@ -372,6 +269,7 @@ a:focus {
     background-color: #8A7557 !important;
     border: none;
     color: white;
+    border-radius: 0px !important;
 }
 
 
@@ -418,15 +316,6 @@ a:focus {
     border: none;
 }
 
-/*Allar konur 18 ára og eldri...*/
-.auglysing {
-    background-color: #8A7557;
-    color: white;
-    width: 40%;
-    height: 20%;
-    padding: 1em;
-}
-
 
 .container {
     position: relative;
@@ -440,11 +329,22 @@ a:focus {
     justify-content: center;
 }
 
-
 .loginInfoItem {
+    width: 33.3%;
     background-color: white;
     margin: 1em;
     padding: 1em;
+}
+
+.readMore a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: dimgrey;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
 }
 
 
@@ -469,59 +369,9 @@ a:focus {
 
 
 
+/*fyrir skjástærð 1298 og minni*/
+@media screen and (max-width: 1298px) {  /* collapse navbar */
 
-/*fyrir skjástærð 511 og stærri*/
-@media screen and (min-width: 511px) {
-    body {
-
-    }
-}
-
-
-@media (min-width: 768px) {
-
-    .navbar-nav {
-
-    }
-
-    .navbar-nav.navbar-center {
-
-    }
-}
-
-
-
-/*fyrir skjástærð 510 og minni*/
-@media screen and (max-width: 510px) {
-    body {
-        font-size: large;
-    }
-
-    .banner-logo {
-        padding: 1em;
-    }
-
-    .banner-logo img {
-        width: 90%;
-    }
-
-    .loginInfo {
-        flex-flow: wrap;
-    }
-
-    .mainSection {
-        flex-flow: wrap;
-    }
-
-    .titleTextBox {
-        margin: 1em;
-    }
-
-
-}
-
-/*
-@media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -534,20 +384,69 @@ a:focus {
     .navbar-header {
         float:none;
     }
-}
 
-*/
+    .navbar-collapse {
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-right: 0em;
+        padding-left: 0em;
+    }
 
-/*
-@media screen and (max-width: 910px) {
-    .navbar-nav > li {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+    .navbar-nav li a {
+        line-height: 15px;
+    }
+
+     .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar-center {
+        padding: 0em;
+        margin: 0em;
+        justify-content: center;
+     }
+
+    .nav>li>a {
+        padding: 10px 0px;
+    }
+
+    .navbar-right {
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-left: 60px;
+        margin: 0em;
+        justify-content: center;
     }
 }
 
-*/
+
+/*fyrir skjástærð 1123 og minni*/
+@media screen and (max-width: 1123px) {  /* Collapse mainSection */
+    body {
+        font-size: large;
+        min-width: 380px;
+    }
+
+    .auglýsing {
+        font-size: 10pt;
+        width: 60%;
+    }
+
+    .loginInfo {
+        flex-flow: wrap;
+    }
+
+    .mainSection {
+        flex-direction: column-reverse;
+    }
+
+    .loginInfoItem {
+        width: 100%;
+    }
+
+}
+
 
 
