@@ -354,6 +354,7 @@ ul.nav.navbar-nav.navbar-center > li.active > a {
     min-height: 2em;
     background-color: white;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .socialMedia {
