@@ -8,7 +8,7 @@
 
         <!-- Favicon for the page -->
 
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="icon" type="image/png" href="https://heilsusaga.herokuapp.com/src/images/favicon.png"/>
 
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <!-- Main title: "Heilsusaga Íslendinga" -->
