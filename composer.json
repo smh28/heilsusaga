@@ -1,0 +1,11 @@
+{
+    "name": "sandra/heilsusaga",
+    "type": "project",
+    "authors": [
+        {
+            "name": "smh28",
+            "email": "sandrahuldudottir@gmail.com"
+        }
+    ],
+    "require": {}
+}
