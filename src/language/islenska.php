@@ -17,7 +17,7 @@ $lang = array(
 
 
     //participate.php text
-    'part_main_auglysing'        => 'Konur 18 ára og eldri geta tekið þátt í rannsókninni',
+    'part_main_auglysing'        => 'Allir 18 ára og eldri geta tekið þátt í rannsókninni',
     'part_main_title'            => 'Rannsókn um heilsusögu Íslendinga',
     'part_main_textbox'          => 'Smelltu á hnappinn til að taka þátt í rannsókninni',
     'part_main_button'           => 'Taka þátt',
