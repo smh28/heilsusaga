@@ -353,6 +353,7 @@ ul.nav.navbar-nav.navbar-center > li.active > a {
     padding: 1em;
     min-height: 2em;
     background-color: white;
+    text-align: center;
 }
 
 .socialMedia {
