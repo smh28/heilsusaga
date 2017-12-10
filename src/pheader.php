@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Favicon for the page -->
-        <?php echo
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        ?>
+
+        <link rel="shortcut icon" href="../images/favicon.ico"/>
+
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <!-- Main title: "Heilsusaga Íslendinga" -->
         <title><?php echo "Heilsusaga Íslendinga"; ?></title>
