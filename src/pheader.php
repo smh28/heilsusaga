@@ -61,14 +61,14 @@
                         </button>
 
                         <ul class="nav navbar-nav">
-                            <li><a href="participate.php"><img src="../images/Heilsusaga-isl-01-glaert.png" height="80px"/></a></li>
+                            <li><a href="index.php"><img src="../images/Heilsusaga-isl-01-glaert.png" height="80px"/></a></li>
                         </ul>
 
                     </div>
                     <div class="navbar-collapse collapse" id="myNavBar">
 
                         <ul class="nav navbar-nav navbar-center">
-                            <li class="<?php echo $participate ?>"><a href="participate.php"><?php echo $lang['navbar_participate']; ?></a></li>
+                            <li class="<?php echo $participate ?>"><a href="index.php"><?php echo $lang['navbar_participate']; ?></a></li>
                             <li class="<?php echo $about ?>"><a href="about.php"><?php echo $lang['navbar_about']; ?></a></li>
                             <li class="<?php echo $faq ?>"><a href="faq.php"><?php echo $lang['navbar_faq']; ?></a></li>
                             <li class="<?php echo $contact ?>"><a href="contact.php"><?php echo $lang['navbar_contact']; ?></a></li>

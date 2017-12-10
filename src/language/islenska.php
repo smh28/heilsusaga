@@ -16,7 +16,7 @@ $lang = array(
     'navbar_titleLang'      => 'change to English',
 
 
-    //participate.php text
+    //index.php text
     'part_main_auglysing'        => 'Allir 18 ára og eldri geta tekið þátt í rannsókninni',
     'part_main_title'            => 'Rannsókn um heilsusögu Íslendinga',
     'part_main_textbox'          => 'Smelltu á hnappinn til að taka þátt í rannsókninni',

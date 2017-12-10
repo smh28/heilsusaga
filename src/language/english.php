@@ -15,7 +15,7 @@ $lang = array(
     'navbar_getLang'        => '?lang=islenska',
     'navbar_titleLang'      => 'skipta yfir í íslensku',
 
-    //participate.php text
+    //index.php text
     'part_main_auglysing'        => 'Persons 18 years and older can participate',
     'part_main_title'            => 'Study about Icelanders health history',
     'part_main_textbox'          => 'Please click on the button to participate in the study',
