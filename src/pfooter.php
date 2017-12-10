@@ -5,12 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta property="og:url"                content="http://dev7.stofnanir.hi.is/" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Heilsusaga Íslendinga" />
-    <meta property="og:description"        content="Rannsókn um heilsusögu Íslendinga" />
-    <meta property="og:image"              content="http://dev7.stofnanir.hi.is/images/Heilsusaga_stort_glaert.png" />
+
     <!-- Main title, i.e. "Heilsusaga Íslendinga" -->
     <title><?php echo "Heilsusaga Íslendinga"; ?></title> <!--$Title-->
 
@@ -58,10 +53,6 @@
 
 
             <a href="https://twitter.com/share?url=http://www.hi.heilsusaga.is/" title="Twitter" class="btn btn-twitter btn-lg"><i class="fa fa-twitter fa-fw"></i> Deila á Twitter</a>
-
-
-
-
 
         </div>
 

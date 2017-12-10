@@ -36,6 +36,7 @@ Vestibulum placerat purus nisi, vel pellentesque purus varius pretium. Nulla por
 
     'part_bottom_ShowMore'      => 'Sýna meira',
     'part_bottom_ShowLess'      => 'Sýna minna',
+    'part_bottom_facebook'      => 'Deildu vefsíðunni með vinum þínum á Facebook',
 
     //about.php text
     'about_title'                      => 'Um rannsóknina',

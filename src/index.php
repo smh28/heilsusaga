@@ -11,6 +11,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <meta property="og:url"                content="https://heilsusaga.herokuapp.com/" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Heilsusaga Íslendinga" />
+        <meta property="og:description"        content="Rannsókn um heilsusögu Íslendinga" />
+        <meta property="og:image"              content="https://heilsusaga.herokuapp.com/src/images/Heilsusaga-is-02-glaert.png" />
+        <meta property="og:image:width"        content="300" />
+
         <!-- Main title, i.e. "Heilsusaga Íslendinga" -->
         <title><?php echo "Heilsusaga Íslendinga"; ?></title>
 
@@ -20,6 +28,9 @@
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,10 +43,17 @@
 
     </head>
 
-
-
     <body>
 
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 
         <?php
             require 'pheader.php';
@@ -64,7 +82,6 @@
 
         </div>
 
-
         <div class="loginInfo">
             <span class="loginInfoItem">
                 <h4><?php echo $lang['part_bottom_titleAboutStudy']; ?></h4>
@@ -83,12 +100,21 @@
         </div>
 
 
+        <div class="socialMedia">
+            <h4>Deildu þessari vefsíðu:</h4>
+
+            <div class="fb-share-button socialMediaItem" data-href="https://heilsusaga.herokuapp.com/" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+                </a>
+            </div>
+
+            <div class="socialMediaItem">
+                <a href="https://twitter.com/share?url=https://heilsusaga.herokuapp.com/" title="Twitter" class="btn btn-twitter btn-sm"><i class="fa fa-twitter fa-fw"></i> Share
+                </a>
+            </div>
+        </div>
 
         <div  class="pageFoot">
-
-            <div class="socialMedia">
-
-            </div>
 
             <div class="logoFoot">
                 <img src="../images/hi_logo_positiv_is_vert.png" width="145px" height="100px;"/>

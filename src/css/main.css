@@ -349,16 +349,19 @@ ul.nav.navbar-nav.navbar-center > li.active > a {
 }
 
 
-.pageFoot {
-    background-color: white;
-}
-
-
 .socialMedia {
+    padding: 1em;
     min-height: 2em;
     background-color: white;
 }
 
+.socialMedia {
+    text-align: center;
+}
+
+.pageFoot {
+    background-color: white;
+}
 
 .logoFoot {
     text-align: center;

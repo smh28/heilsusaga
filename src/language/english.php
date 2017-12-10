@@ -32,6 +32,7 @@ $lang = array(
     'part_bottom_howToPart'     => 'Proin ac aliquet justo. Nullam eu interdum arcu. In velit mauris, posuere porta mauris id, posuere congue nibh. Vestibulum nec urna ut ante elementum dictum vel vitae ante. Nulla arcu ligula, lobortis eu rhoncus in, finibus ac purus. Suspendisse sed sapien vitae magna euismod rhoncus ac sed diam. Proin rhoncus, ex vel vehicula vestibulum, eros felis maximus felis, et dapibus sem ex a nulla. Sed purus urna, imperdiet nec nulla eu, mollis laoreet sapien. Duis eget sapien fermentum, blandit orci in, fringilla massa. Mauris eu sapien rhoncus, auctor mi vitae, tincidunt leo. Nulla varius mollis augue ut gravida. Cras nec elit orci. Morbi dignissim ligula et dolor efficitur molestie. Aliquam rutrum ullamcorper magna quis faucibus. Ut scelerisque neque dolor, id interdum lectus interdum et. Vestibulum placerat purus nisi, vel pellentesque purus varius pretium. Nulla porta ut orci et convallis. Quisque massa ligula, suscipit nec tellus et, rutrum tristique nibh. Curabitur id rhoncus sapien. Sed imperdiet felis eget risus aliquet, id consequat dolor aliquet. Nulla fermentum fermentum orci venenatis imperdiet. Mauris iaculis faucibus arcu, non malesuada dui euismod sed. Proin rutrum faucibus elit nec commodo. Donec eget lectus tellus.',
     'part_bottom_ShowMore'      => 'Show more',
     'part_bottom_ShowLess'      => 'Show less',
+    'part_bottom_facebook'      => 'Share this website with your friends on Facebook',
 
     //about.php text
     'about_title'                      => 'About the Study',
