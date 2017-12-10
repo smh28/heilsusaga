@@ -270,6 +270,7 @@ ul.nav.navbar-nav.navbar-center > li.active > a {
     border: none;
     color: white;
     border-radius: 0px !important;
+    text-align: center;
 }
 
 
